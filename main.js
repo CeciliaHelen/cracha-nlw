@@ -1,6 +1,6 @@
 const LinksSocialMedia = {
   github: 'CeciliaHelen',
-  youtube: 'channel/UCFem4Nwt7f69ywicijy4uJQ',
+  linkedin: 'in/cecília-câmara-400303181/',
   facebook: 'profile.php?id=100010639334292',
   instagram: 'cecilia_hln',
   twitter: 'CecisHelen'
