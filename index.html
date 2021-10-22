@@ -1,0 +1,130 @@
+<!--
+  HTML - Hyper Text Markup Language
+-->
+
+<!--Serve para identificar que está usando o HTML-->
+<!DOCTYPE html>
+
+<!--
+tags
+head e body: são tags conteúdos da tag html
+
+head: responsável por fazer aterações na página
+
+body: responsável pelo visual da página
+
+h1: representa os tamanhos dos textos (quanto menor o número, maior ele será)
+a href="": representa a criação de um link que redicionará para alguma página
+
+style: estiliza a página
+
+h1{}:
+* funciona como um seletor. Ele terá referência de todo o h1, ou seja onde tiver h1 haverá a configuração estabelicida
+* Propriedade - valor
+* body{
+  declaração
+  propriedade:valor
+  color: #333333;
+}
+
+tags e anatomia: <tag atributo= "valor/nome_atributo">conteúdo</p>
+
+cascata: o anterior é sobescrito pelo próximo. pega o último que aparecer
+
+especificidade:
+o que é levado em consideração:
+* <estilo> (inline) > # (ID seletor) > (classes, subclasses) > (selestores de elementos)
+
+unidades de medidas e responsivo:
+* relativas
+  - os pixels se ajudatam às telas
+* estáticas:
+  - pixels
+  - relação com a tela
+  - para cada tela, há um conjunto de pixels, eles não se adaptam
+
+box model:
+* Funciona como uma caixa (container)
+
+layout:
+
+
+-->
+<!-- tag pai -->
+<html>
+  <!-- tags filhas -->
+  <head>
+    <title>Cecilia Helen - DoWhile 2021</title>
+    <!--Não possui conteúdo só atributo, por isso a tag se fecha nela mesma-->
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- script: leitura de cima para baixo (sincronismo)-->
+  </head>
+  <body>
+    <main>
+      <!--Funciona como uma caixa e contém a estrutura do cpodigo-->
+      <div class="container">
+        <div class="avatar">
+          <!--Sem conteúdo interno, mas possui 2 atributos-->
+          <!--src: local da imagem/ alt: texto informando que não encontrou a imagem-->
+          <span>
+            <img src="images/selo.svg" alt="Selo Rocketseat" />
+          </span>
+          <img
+            src="images/IGTV segundo post.png"
+            alt="Foto pessoal"
+            id="userImage"
+          />
+        </div>
+        <h1 id="userName">Cecília Hélen</h1>
+        <!--<tag atributo= "valor/nome_atributo">conteúdo</p>-->
+        <a id="userLink" href="https://github.com/CeciliaHelen" target="_blank">
+          <img src="images/github.svg" alt="Ícone github" />
+          <span id="userLogin">CeciliaHelen</span>
+        </a>
+        <!--parágrafo-->
+        <p id="userBio">
+          Uma cientista da computação fascinada fascinada por tecnologia e dados
+        </p>
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a
+              href="https://www.youtube.com/channel/UCFem4Nwt7f69ywicijy4uJQ"
+              target="_blank"
+            >
+              <img src="images/youtube.svg" alt="Ícone youtube" />
+            </a>
+          </li>
+
+          <li class="instagram">
+            <a href="https://www.instagram.com/cecilia_hln/" target="_blank">
+              <img src="images/instagram.svg" alt="Ícone instagram" />
+            </a>
+          </li>
+
+          <li class="facebook">
+            <a
+              href="https://www.facebook.com/profile.php?id=100010639334292"
+              target="_blank"
+            >
+              <img src="images/facebook.svg" alt="Ícone facebook" />
+            </a>
+          </li>
+
+          <li class="twitter">
+            <a href="https://twitter.com/CecisHelen" target="_blank">
+              <img src="images/twitter.svg" alt="Ícone youtube" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
