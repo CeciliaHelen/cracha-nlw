@@ -5,7 +5,7 @@
 html,
 body {
   --black: hsl(240, 6%, 13%);
-  --grey: hsl(240, 9%, 89%);
+  --gray: hsl(240, 9%, 89%);
 
   height: 100%;
   font-family: 'Roboto', sans-serif;
@@ -13,14 +13,19 @@ body {
 }
 
 body {
+
   display: grid;
+
   place-items: center;
+
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -29,7 +34,7 @@ main {
   margin-right: auto;
   text-align: center;
 
-  color: var(--grey);
+  color: var(--gray);
 }
 
 .avatar {
@@ -55,12 +60,15 @@ main {
 
 h1 {
   font-size: 1.5rem;
+  color: var(--gray);
 
   margin-top: 1.5rem;
 }
 
 a {
-  color: var(--grey);
+
+  color: var(--gray);
+
   text-decoration: none;
 
   margin-top: 0.25rem;
@@ -74,6 +82,7 @@ a {
 
 p {
   margin-top: 2rem;
+  color: var(--gray);
 }
 
 ul {
